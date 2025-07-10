@@ -132,7 +132,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 🔗 Links
 
 - **GitHub**: https://github.com/benkosoft
-- **Buy Me a Coffee**: https://www.buymeacoffee.com/benkosoft
+- **Buy Me a Coffee**: https://coff.ee/benkosoftware
 
 ---
 

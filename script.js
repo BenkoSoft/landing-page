@@ -160,5 +160,5 @@ console.log(`
 🚀 Welcome to BenkoSoftware!
 💡 We're passionate about creating great developer tools.
 ⭐ Check out our GitHub: https://github.com/benkosoft
-☕ Support our work: https://www.buymeacoffee.com/benkosoft
+☕ Support our work: https://coff.ee/benkosoftware
 `); 
