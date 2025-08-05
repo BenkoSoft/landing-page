@@ -568,6 +568,8 @@ section {
     color: #999;
 }
 
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-container {
@@ -596,8 +598,9 @@ section {
         text-align: center;
     }
     
+    /* Hide navigation on mobile */
     .nav-links {
-        display: none;
+        display: none !important;
     }
     
     .hero-buttons {

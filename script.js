@@ -122,37 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 100);
     });
 
-    // Mobile menu toggle (if needed in the future)
-    const createMobileMenu = () => {
-        const nav = document.querySelector('.nav-container');
-        const navLinks = document.querySelector('.nav-links');
-        
-        if (window.innerWidth <= 768 && !document.querySelector('.mobile-menu-btn')) {
-            const mobileBtn = document.createElement('button');
-            mobileBtn.className = 'mobile-menu-btn';
-            mobileBtn.innerHTML = '<i class="fas fa-bars"></i>';
-            mobileBtn.style.cssText = `
-                background: none;
-                border: none;
-                font-size: 1.5rem;
-                color: #333;
-                cursor: pointer;
-                display: block;
-            `;
-            
-            nav.appendChild(mobileBtn);
-            
-            mobileBtn.addEventListener('click', function() {
-                navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-            });
-        }
-    };
 
-    // Initialize mobile menu
-    createMobileMenu();
-    
-    // Recreate mobile menu on resize
-    window.addEventListener('resize', createMobileMenu);
 });
 
 // Add some console fun
