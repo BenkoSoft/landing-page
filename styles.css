@@ -70,6 +70,12 @@ body {
     gap: 12px;
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
 }
 
 .logo-img {
@@ -601,6 +607,17 @@ section {
     /* Hide navigation on mobile */
     .nav-links {
         display: none !important;
+    }
+    
+    /* Ensure logo is clickable on mobile */
+    .logo {
+        min-height: 44px;
+        min-width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 8px;
+        -webkit-tap-highlight-color: rgba(0, 214, 115, 0.2);
     }
     
     .hero-buttons {

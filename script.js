@@ -1,8 +1,10 @@
 // Smooth scrolling for navigation links
 document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for navigation links
+    // Smooth scrolling for navigation links and logo
     const navLinks = document.querySelectorAll('.nav-link');
+    const logoLink = document.querySelector('.logo');
     
+    // Handle navigation links
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
@@ -21,6 +23,26 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+    
+    // Handle logo link
+    if (logoLink) {
+        logoLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+                const headerHeight = document.querySelector('.header').offsetHeight;
+                const targetPosition = targetSection.offsetTop - headerHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    }
 
     // Header scroll effect
     const header = document.querySelector('.header');
